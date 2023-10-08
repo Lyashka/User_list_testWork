@@ -13,7 +13,7 @@ export const useUsersDataStore = defineStore('usersData', () => {
       id: 2,
       name: 'Liza',
       age: 12,
-      last_login: '01.10.23'
+      last_login: '01.09.23'
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ export const useUsersDataStore = defineStore('usersData', () => {
       id: 5,
       name: 'Anna',
       age: 99,
-      last_login: '17.10.22'
+      last_login: '17.11.22'
     },
     {
       id: 6,
@@ -195,8 +195,6 @@ export const useUsersDataStore = defineStore('usersData', () => {
     if (search == '') {
       users.value = cloneUsers
     } else {
-      // currentPage.value = 1
-      // paginateUsers(currentPage.value)
       users.value = cloneUsers
       const searchLover = search.toLowerCase()
       users.value = users.value.filter((user) => user.name.toLowerCase().includes(searchLover))

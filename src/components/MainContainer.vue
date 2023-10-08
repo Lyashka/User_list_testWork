@@ -95,8 +95,6 @@ watch(search, handleValueSearch)
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 10vh; */
-  /* width: 40vw; */
   height: 1vh;
   cursor: pointer;
 }
